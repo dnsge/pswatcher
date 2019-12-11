@@ -1,6 +1,12 @@
 # pswatcher
 Java program that monitors F1 grades in PowerSchool and sends Telegram messages containing any updates.
 
+### Run via Docker
+```shell script
+docker pull dnsge/pswatcher:1.0
+docker run --name pswatcher --env-file config.env dnsge/pswatcher:1.0
+```
+
 ### Environment Variables For Configuration:
 - USERNAME
     - Username to log into PowerSchool with
